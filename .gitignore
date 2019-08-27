@@ -2,3 +2,7 @@ TitleBanner/Library/
 TitleBanner/Temp/
 TitleBanner/Logs/
 TitleBanner/obj/
+TitleBanner/Assembly-CSharp.csproj
+TitleBanner/Assembly-CSharp-Editor.csproj
+TitleBanner/TitleBanner.sln
+TitleBanner/TitleBanner.sln.DotSettings.user

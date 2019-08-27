@@ -229,7 +229,8 @@ public class TitleBanner : MonoBehaviour , IDragHandler , IBeginDragHandler , IE
         }
         if (curNode == null)
         {
-            RefreshViewNode(newNode);
+            UpdateNode(newNode);
+            //RefreshViewNode(newNode);
         }
         else
         {
@@ -255,6 +256,7 @@ public class TitleBanner : MonoBehaviour , IDragHandler , IBeginDragHandler , IE
                 _onUpdateDot(dots[i], i, i == curNode.Value);
             }
         }
+        time = 0;
     }
 
     private void RefreshViewNode(Node node)
@@ -450,7 +452,6 @@ public class TitleBanner : MonoBehaviour , IDragHandler , IBeginDragHandler , IE
 
         Node newNode = nodes[index];
         Focus(newNode);
-        time = 0;
     }
 
     private void UpdateNode(Node node)
